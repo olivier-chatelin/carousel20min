@@ -1,6 +1,8 @@
 const buttons = document.getElementsByClassName('slide-button');
 const band = document.getElementById('band');
-const nbImage = 5;
+const slides = document.getElementsByClassName('slide');
+const nbImage = slides.length;
+console.log(nbImage);
 let leftOffset = 0;
 let index = 1;
 

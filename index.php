@@ -10,13 +10,12 @@
     <title>Carousel</title>
 </head>
 <body>
+<?php require "data.php";?>
     <div class="window">
         <div class="band" id="band">
-            <img src="https://picsum.photos/500/300?random=1" class="slide" alt="photo1">
-            <img src="https://picsum.photos/500/300?random=2" class="slide" alt="photo2">
-            <img src="https://picsum.photos/500/300?random=3" class="slide" alt="photo3">
-            <img src="https://picsum.photos/500/300?random=4" class="slide" alt="photo4">
-            <img src="https://picsum.photos/500/300?random=5" class="slide" alt="photo5">
+            <?php foreach ($slides as $index => $slide):?>
+                <img src="<?=$slide?>" class="slide" alt="photo<?=$index + 1?>">
+            <?php endforeach;?>
         </div>
     </div>
     <div class="button-container">
