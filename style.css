@@ -1,0 +1,30 @@
+.window{
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+    margin: 30vh auto 0 auto;
+    overflow: hidden;
+
+}
+.button-container{
+    width: 500px;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.band{
+    display: flex;
+
+}
+.slide{
+    margin-right: 2px;
+}
+.slide-button{
+    font-size: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
